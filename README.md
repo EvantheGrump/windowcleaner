@@ -1,5 +1,6 @@
 # windowsclean
-various homemade .reg files made to give Windows 10 a cleaner appearance
+
+Software that uses various .reg files to give Windows a cleaner look.
 
 Download with this [here](https://github.com/EvantheGrump/windowsclean/releases/latest/download/windowcleaner.exe)
 
