@@ -1,4 +1,4 @@
-# windowsclean
+# windowcleaner
 
 Software that uses various .reg files to give Windows a cleaner look.
 
