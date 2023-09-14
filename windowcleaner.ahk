@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v1.1.34.03
+#Requires AutoHotkey v1.1.34.03
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -61,6 +61,7 @@ Return
 
 ButtonUpdate:
 run https://github.com/EvantheGrump/windowclean
+return
 
 b1:
 SetWorkingDir %A_ScriptDir%
