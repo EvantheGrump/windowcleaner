@@ -3,6 +3,12 @@
 #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#SingleInstance Force
+
+if not A_IsAdmin
+
+  Run *RunAs "%A_ScriptFullPath%"
+
 
 Gui, Add, Progress, x6 y7 w180 h30 vUpdating
 Gui, Show, x127 y87 h49 w197, Updating
@@ -15,6 +21,7 @@ WinWait, ahk_exe powershell.exe
 WinWaitClose ahk_exe powershell.exe
 GuiControl,, Updating, +25
 filedelete, part.exe
+FileCopy, regs\blank.ico, C:\Windows\System32\blank.ico, 1
 
 Gui, Destroy
 SetWorkingDir regs
@@ -96,4 +103,3 @@ b15:
 return
 GuiClose:
 ExitApp
-
