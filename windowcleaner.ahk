@@ -70,7 +70,7 @@ return
 b1:
 SetWorkingDir %A_ScriptDir%
 SetWorkingDir plugins
-run shortcutmanager.ahk
+run shortcutmanager.exe
 ExitApp
 b2:
 
