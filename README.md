@@ -1,6 +1,6 @@
 # windowcleaner
 
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/EvantheGrump/windowcleaner/total.svg)]()
 
 Software that uses various .reg files to give Windows a cleaner look.
 
