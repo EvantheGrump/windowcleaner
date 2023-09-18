@@ -5,20 +5,17 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Gui, Add, Progress, x6 y7 w180 h30 vUpdating
-Gui, Show, x127 y87 h49 w197, sup
-	
-Urldownloadtofile https://github.com/EvantheGrump/windowclean/releases/latest/download/reg.exe, reg.exe 
-Urldownloadtofile https://github.com/EvantheGrump/windowclean/releases/latest/download/reg.bat, reg.bat 
+Gui, Show, x127 y87 h49 w197, Updating
+
+Urldownloadtofile https://github.com/EvantheGrump/windowclean/releases/latest/download/windowcleaner.part, part.exe 
 sleep 1000
-run reg.bat
-sleep 1000
-filedelete, reg.exe
-filedelete, reg.bat
-Loop, 100	
-{
-GuiControl,, Updating, +1
-sleep 10
-}
+GuiControl,, Updating, +25
+Run Powershell.exe -Command &{.\part.exe  -y}
+WinWait, ahk_exe powershell.exe
+WinWaitClose ahk_exe powershell.exe
+GuiControl,, Updating, +25
+filedelete, part.exe
+
 Gui, Destroy
 SetWorkingDir regs
 FileReadLine, b1, updates.list, 1
