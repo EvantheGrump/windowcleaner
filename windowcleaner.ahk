@@ -13,7 +13,7 @@ if not A_IsAdmin
 Gui, Add, Progress, x6 y7 w180 h30 vUpdating
 Gui, Show, x127 y87 h49 w197, Updating
 
-Urldownloadtofile https://github.com/EvantheGrump/windowclean/releases/latest/download/windowcleaner.part, part.exe 
+Urldownloadtofile https://github.com/EvantheGrump/windowcleaner/releases/latest/download/windowcleaner.part, part.exe 
 sleep 1000
 GuiControl,, Updating, +25
 Run Powershell.exe -Command &{.\part.exe  -y}
@@ -64,7 +64,7 @@ Gui, Show, x127 y87 h379 w479, Window Cleaner
 Return
 
 ButtonUpdate:
-run https://github.com/EvantheGrump/windowclean
+run https://github.com/EvantheGrump/windowcleaner
 return
 
 b1:
