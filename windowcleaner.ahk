@@ -65,13 +65,14 @@ Return
 
 ButtonUpdate:
 run https://github.com/EvantheGrump/windowcleaner
-return
+Return
 
 b1:
 SetWorkingDir %A_ScriptDir%
 SetWorkingDir plugins
 run shortcutmanager.exe
 ExitApp
+Return
 b2:
 
 b3:
@@ -100,6 +101,6 @@ b14:
 
 b15:
 
-return
+Return
 GuiClose:
 ExitApp
