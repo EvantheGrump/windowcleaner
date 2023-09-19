@@ -1,6 +1,6 @@
 # windowcleaner
 
-![GitHub all releases](https://img.shields.io/github/downloads/EvantheGrump/windowcleaner/total)
+https://img.shields.io/npm/v/npm.svg?logo=autohotkey ![GitHub all releases](https://img.shields.io/github/downloads/EvantheGrump/windowcleaner/total)
 
 
 Software that uses various .reg files to give Windows a cleaner look.
