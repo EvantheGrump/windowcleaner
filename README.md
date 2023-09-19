@@ -8,7 +8,6 @@
 </div>
 
 Software that uses various .reg files to give Windows a cleaner look.
-
 Currently, this software is able to remove the arrows seen on shortcuts that are placed on the desktop.
 
 # <p align="center">Download [here!](https://github.com/EvantheGrump/windowsclean/releases/latest/download/windowcleaner.exe)</p>
